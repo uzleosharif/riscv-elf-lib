@@ -6,7 +6,6 @@ project(examples CXX)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_FLAGS "-fsanitize=leak -fsanitize=address")
 
 add_executable(readelf read_elf.cpp)
 target_link_libraries(readelf PRIVATE riscv_elf)
